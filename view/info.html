@@ -1,0 +1,86 @@
+							  <!-- .comment-reply -->
+							  <div ng-repeat="x in comments | filter:{'commTarget':'小鱼儿'}">
+								  	<div class="m-l-lg">
+									<a class="pull-left thumb-sm avatar">
+									  <img src="{{x.userImg}}" alt="...">
+									</a>          
+									<div class="m-l-xxl panel b-a">
+									  <div class="panel-heading pos-rlt">
+										<span class="arrow left pull-up"></span>
+										<span class="text-muted m-l-sm pull-right">
+										  {{x.time}}
+										</span>
+										<a href="">{{x.userName}}</a>
+										{{x.userComment}}                       
+									  </div>
+									</div>
+								 </div>
+							  </div>
+							  
+							  
+							  
+							  	
+								<a class="pull-left thumb-sm avatar m-l-n-md">
+								  <img src="{{userArr[2].userImg}}" class="img-circle" alt="...">
+								</a>
+								<div class="m-l-lg m-b-lg">
+								  <div class="m-b-xs">
+									<a href="" class="h4">{{userArr[2].userName}}</a>
+									<span class="text-muted m-l-sm pull-right">
+									  3h ago
+									</span>
+								  </div>
+								  <div class="m-b">
+									<div class="m-b">
+										{{userArr[2].content}}
+									</div>
+									<img src="{{userArr[2].contentImg}}" class="b b-a wrapper-xs bg-white img-responsive">
+									<div class="m-t-sm">
+									  <a href="" class="text-muted m-xs"><i class="icon-action-redo"></i></a>
+									  <a href="" class="text-muted m-xs"><i class="icon-star"></i></a>
+									  <a href="" class="text-muted m-xs"><i class="icon-refresh"></i> 13</a>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							  <div>
+								<a class="pull-left thumb-sm avatar m-l-n-md">
+								  <img src="{{userArr[3].userImg}}" class="img-circle" alt="...">
+								</a>
+								<div class="m-l-lg m-b-lg">
+								  <div class="m-b-xs">
+									<a href="" class="h4">{{userArr[3].userName}}</a>
+									<span class="text-muted m-l-sm pull-right">
+									  4h ago
+									</span>
+								  </div>
+								  <div>
+									<div class="m-b">
+									{{userArr[3].content}}
+									</div>
+									
+									<!-- .comment-reply -->
+							  <div ng-repeat="x in comments | filter:{'commTarget':'请叫我大帅柯'}" class="fadeComment">
+								  	<div class="m-l-lg">
+									<a class="pull-left thumb-sm avatar">
+									  <img src="{{x.userImg}}" alt="...">
+									</a>          
+									<div class="m-l-xxl panel b-a">
+									  <div class="panel-heading pos-rlt">
+										<span class="arrow left pull-up"></span>
+										<span class="text-muted m-l-sm pull-right">
+										  {{x.time | date:'yyyy-mm-dd'}}
+										</span>
+										<a href="">{{x.userName}}</a>
+										{{x.userComment}}                       
+									  </div>
+									</div>
+								 </div>
+							  </div>
+									
+									
+									
+									<div class="panel panel-default m-t-md m-b-n-sm pos-rlt">
+									  <form>
+										<textarea class="form-control no-border" rows="3" placeholder="Your comment..." ng-model="com"></textarea>
+									  </form>
